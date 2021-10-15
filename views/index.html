@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Test Panel</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="maindiv">
+        <h1 align="center">Test Panel</h1>
+        <form method="POST" action="/result">
+            <table id="table">
+                <tbody>
+                    <tr>
+                        <td>IP</td>
+                        <td>
+                            <input type="text" name="ip" value="127.0.0.1">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Root Password</td>
+                        <td>
+                            <input type="password" name="password">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Apt Source</td>
+                        <td>
+                            <select name="source">
+                                <option value="1">华为源</option>
+                                <option value="2">清华源</option>
+                                <option value="2">阿里源</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <!--
+                  <tr>
+                      <td>Interest Rate</td>
+                      <td>
+                          <input type="range" min="1" max="20" step="0.25" value="10.25" id="rate" onchange="updateRate()" oninput="updateRate()">
+                          <span id="rate_val">10.25%</span>
+                      </td>
+                  </tr>
+              //-->
+                    <tr>
+                        <td>NV Driver</td>
+                        <td>
+                            <select name="driver">
+                                <option value="1">470最新</option>
+                                <option value="2">465最新</option>
+                                <option value="2">460最新</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>安装最新Docker和NV-docker</td>
+                        <td>
+                            <input type="checkbox" name="docker" checked="checked">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" colspan="2"><input type="submit" value="Execute"></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </form>
+        
+            
+        <br>
+        <span id="result"></span>
+    </div>
+</body>
+
+<footer>
+    有问题请DC找苗宜霖(导师：许笑寒)
+</footer>
+
+</html>
